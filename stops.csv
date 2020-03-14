@@ -1,0 +1,658 @@
+id,nazwa,dlugosc,szerokosc
+2,Witosa / Warszawska,21.14339,51.45219
+3,Witosa / Działki,21.15060,51.45471
+4,Witosa / Cmentarz,21.15478,51.45628
+5,Warszawska / Barlickiego,21.14355,51.44895
+6,Warszawska / Ofiar Firleja,21.14518,51.44352
+7,Ofiar Firleja / Gombrowicza,21.14951,51.44497
+8,Firlej / Cmentarz,21.15792,51.45053
+9,Warszawska / Witosa,21.14272,51.45053
+10,Witosa / Warszawska,21.14424,51.45257
+11,Witosa / Działki,21.15178,51.45520
+12,Witosa / Cmentarz,21.15558,51.45684
+13,Warszawska / Barlickiego,21.14410,51.44607
+14,Warszawska / Ofiar Firleja,21.14570,51.44088
+15,Ofiar Firleja / Gombrowicza,21.14895,51.44468
+18,Energetyków / Nowa Wola Gołębiowska,21.19298,51.44923
+20,Energetyków / Gajl (NŻ),21.19130,51.44509
+24,Osiowa / Krańcowa,21.11788,51.41403
+25,Przytycka / Uniwersytecka,21.10677,51.40910
+26,Wolanowska / Spadzista,21.10981,51.40304
+27,Wolanowska / Stroma,21.10402,51.40285
+28,Wolanowska / Milejowicka,21.09833,51.40317
+29,Wolanowska / Areszt (NŻ),21.08927,51.40144
+30,Wolanowska / Wapienna (NŻ),21.08376,51.40047
+31,Wolanowska / Wapienna (NŻ),21.08028,51.39973
+32,Wolanowska I (NŻ),21.07283,51.39837
+33,Wolanowska II,21.06132,51.39614
+34,Kielecka / Wolanowska,21.11612,51.40256
+35,Kielecka / Garbarska (NŻ),21.11182,51.39951
+36,Kielecka / Halinowska,21.10592,51.39535
+37,Wolanowska / Spadzista,21.10952,51.40295
+38,Wolanowska / Stroma,21.10307,51.40268
+39,Wolanowska I (NŻ),21.07086,51.39787
+40,Wolanowska II,21.06227,51.39615
+41,Kielecka / Garbarska (NŻ),21.11069,51.39855
+42,Kielecka / Halinowska,21.10550,51.39487
+43,Przytycka / Uniwersytecka,21.10870,51.40860
+44,Warszawska / Janiszewska (NŻ),21.14781,51.43506
+45,Warszawska / Rondo,21.14955,51.42945
+46,Żółkiewskiego / Sobieskiego,21.15929,51.42571
+47,Os. Michałów,21.16064,51.42971
+48,Mieszka I / Piastowska,21.16599,51.43230
+49,Malczewskiego / Kelles-Krauza,21.15026,51.40459
+50,Warszawska / Kusocińskiego,21.15420,51.41105
+51,Warszawska / 11 Listopada,21.15442,51.41372
+52,Warszawska / Rybna (NŻ),21.15297,51.41835
+53,Warszawska / Klejowa (NŻ),21.15178,51.42224
+54,11 Listopada / Starowolska,21.15857,51.41411
+55,Żwirki i Wigury / Kusocińskiego,21.16536,51.41033
+56,Kusocińskiego / Żwirki i Wigury,21.16396,51.40968
+57,Kusocińskiego / Chrobrego,21.15982,51.41017
+58,Chrobrego / Sowińskiego,21.16005,51.41195
+59,Chrobrego / Mierzejewskiego,21.16327,51.41857
+61,Paderewskiego / Sempołowskiej,21.17071,51.41746
+62,Os. Gołębiów II / Paderewskiego,21.17474,51.41629
+63,Chrobrego / Rapackiego,21.16287,51.42222
+64,Żwirki i Wigury / 11 Listopada,21.16528,51.41252
+65,11 Listopada / Żwirki i Wigury,21.16673,51.41278
+66,11 Listopada / Sportowa,21.16918,51.41249
+67,Kielecka / Przytycka,21.11942,51.40470
+68,Kielecka / Przytycka,21.12124,51.40618
+70,Langiewicza / al. Róż (NŻ),21.12233,51.40976
+71,Langiewicza / Osiowa,21.12226,51.41245
+72,Osiowa / Langiewicza,21.12164,51.41298
+73,Czarnieckiego / Zielona,21.12802,51.41092
+76,Zielona / Janiszew,21.12298,51.41990
+77,Rodziny Winczewskich / Warszawska,21.15216,51.40920
+78,Obozisko,21.14732,51.40977
+80,Wernera / Mireckiego,21.14086,51.40951
+81,Mireckiego / Wernera,21.14218,51.40834
+82,Wernera / Chłodna,21.13538,51.41058
+83,Chłodna / Folwarczna,21.13592,51.41112
+84,Folwarczna / Iglasta,21.13908,51.41396
+85,Struga / pl. Jagielloński,21.15488,51.40489
+86,Struga / Zbrowskiego,21.17218,51.40839
+87,Kelles-Krauza / 25 Czerwca,21.16192,51.40295
+88,25 Czerwca / Skłodowskiej-Curie,21.16356,51.40217
+89,25 Czerwca / Skłodowskiej-Curie,21.16308,51.40090
+90,Żeromskiego / Czachowskiego,21.16653,51.39985
+91,Żeromskiego / Czachowskiego,21.16802,51.39961
+92,Zbrowskiego / Leśniczówka,21.17081,51.40236
+93,Zbrowskiego / Leśniczówka,21.17149,51.40393
+94,Zbrowskiego / Olsztyńska,21.17289,51.40674
+95,Średnia / Puławska,21.17447,51.39624
+96,25 Czerwca / Kaufland,21.16197,51.39855
+97,Słowackiego / Nowogrodzka,21.16230,51.39711
+98,Sienkiewicza / Katedra,21.15782,51.39758
+99,Mickiewicza / Katedra,21.15578,51.39712
+100,Traugutta / Piłsudskiego,21.15109,51.39784
+101,Narutowicza / Podwalna,21.14308,51.39837
+102,Narutowicza / Kościuszki,21.15008,51.39690
+103,Lekarska / Szpital,21.14567,51.40049
+105,Limanowskiego / Młodzianowska,21.13862,51.39820
+106,Limanowskiego / Lustrzana,21.13465,51.39577
+107,Żeromskiego / Traugutta,21.14787,51.40205
+108,Żeromskiego / Traugutta,21.14734,51.40212
+109,Reja / Wolność,21.14494,51.40368
+110,Okulickiego / Rondo,21.13651,51.40459
+111,Chłodna / Równa,21.13553,51.40805
+113,Okulickiego / Polna,21.13139,51.40559
+114,Okulickiego / Przeskok,21.12602,51.40660
+116,Os. Zamłynie,21.11863,51.40088
+117,Maratońska / Podhalańska (NŻ),21.11832,51.39597
+118,Maratońska / Podhalańska (NŻ),21.11700,51.39580
+119,Limanowskiego / Lustrzana,21.13455,51.39535
+120,Limanowskiego / Młodzianowska,21.13890,51.39817
+121,Narutowicza / Podwalna,21.14331,51.39846
+122,Narutowicza / Kościuszki,21.14973,51.39709
+123,Limanowskiego / Wałowa,21.13997,51.40193
+125,Reja / Wolność,21.14493,51.40357
+126,Traugutta / Piłsudskiego,21.15090,51.39798
+127,Słowackiego / Nowogrodzka,21.16294,51.39683
+128,Zbrowskiego / Olsztyńska,21.17280,51.40672
+129,Malczewskiego / Kelles-Krauza,21.15061,51.40517
+130,Malczewskiego / Wernera,21.15200,51.40683
+131,Malczewskiego / Wernera,21.15243,51.40820
+132,Struga / pl. Jagielloński,21.15483,51.40505
+133,Struga / 25 Czerwca,21.16483,51.40705
+134,Struga / 25 Czerwca,21.16710,51.40736
+135,Kelles-Krauza / 25 Czerwca,21.16266,51.40294
+136,25 Czerwca / Struga,21.16573,51.40662
+137,Struga / Zbrowskiego,21.17163,51.40840
+138,Kielecka / Wolanowska,21.11732,51.40340
+140,Główna / Krucza,21.12325,51.40345
+141,Okulickiego / Przeskok,21.12660,51.40639
+142,Okulickiego / Polna,21.13263,51.40522
+143,Okulickiego / Rondo,21.13763,51.40425
+145,Osiowa / Krańcowa,21.11806,51.41392
+146,Czarnieckiego / Zielona,21.12710,51.41041
+147,Zielona / Sarnia (NŻ),21.12520,51.41586
+148,Wernera / Chłodna,21.13721,51.41011
+150,Wernera / Mireckiego,21.14508,51.40833
+151,Obozisko,21.14654,51.40979
+153,11 Listopada / Starowolska,21.15929,51.41414
+154,Żwirki i Wigury / Kusocińskiego,21.16540,51.40928
+155,Chrobrego / Sowińskiego,21.15995,51.41233
+156,Chrobrego / Mierzejewskiego,21.16244,51.41763
+158,Paderewskiego / Sempołowskiej,21.17005,51.41767
+159,Chrobrego / Rapackiego,21.16278,51.42127
+160,Warszawska / Rybna (NŻ),21.15246,51.41903
+161,Warszawska / Klejowa (NŻ),21.15118,51.42317
+162,Żółkiewskiego / Sobieskiego,21.15814,51.42620
+163,Mieszka I / Królowej Jadwigi,21.16373,51.42790
+164,Warszawska / Rondo,21.14920,51.42957
+165,Os. Michałów,21.16062,51.42961
+166,Warszawska / Janiszewska (NŻ),21.14793,51.43370
+167,Mieszka I / Piastowska,21.16520,51.43120
+168,Maratońska / Dębowa,21.12421,51.39280
+169,Maratońska / Limanowskiego,21.12751,51.39090
+171,Limanowskiego / Cmentarz,21.13207,51.39298
+172,Limanowskiego / Sucha,21.12380,51.38531
+173,Sucha / Limanowskiego,21.12273,51.38577
+174,Limanowskiego / Toruńska,21.11960,51.38136
+175,Toruńska / Limanowskiego,21.12106,51.38124
+176,Toruńska / Wierzbicka,21.12741,51.37941
+177,Wierzbicka / Toruńska,21.12910,51.37983
+178,Wjazdowa / Wierzbicka,21.13005,51.37896
+179,Wierzbicka / Toruńska,21.12840,51.37862
+180,Wierzbicka / Szkoła (NŻ),21.12798,51.37688
+181,Wierzbicka / Czarnoleska,21.12588,51.37247
+182,Wierzbicka / Warsztatowa,21.12352,51.36675
+183,Czarnoleska / Wierzbicka,21.12890,51.37273
+184,Czarnoleska / Urszuli,21.13205,51.37163
+186,Wierzbicka / Tartaczna,21.13048,51.38515
+187,1905 Roku / Obrońców,21.13494,51.39004
+188,1905 Roku / Tytoniowa,21.13955,51.39067
+189,1905 Roku / Kościuszki,21.14631,51.39146
+190,Poniatowskiego / Dworzec PKP,21.15357,51.39165
+191,Dworzec PKP,21.15457,51.39137
+193,PCK / Grzecznarowskiego,21.15410,51.38704
+194,PCK / Grzecznarowskiego,21.15184,51.38679
+195,Młodzianowska / Gazowa,21.14799,51.38353
+196,Wiejska / Bukietowa,21.15046,51.37495
+198,Wiejska / Rolnicza,21.14813,51.36502
+200,Grzecznarowskiego / Śląska,21.15806,51.38599
+201,Jana Pawła II / Grzecznarowskiego,21.15940,51.38362
+202,Grzecznarowskiego / Jana Pawła II (NŻ),21.16300,51.38338
+203,Jana Pawła II / Sandomierska,21.15904,51.38184
+204,Jana Pawła II / Sandomierska,21.15869,51.38078
+208,Słowackiego / Kalińska,21.17287,51.38882
+209,Cymerysa-Kwiatkowskiego / Błotnia,21.16543,51.38865
+210,Maratońska / Limanowskiego,21.12828,51.39080
+211,Limanowskiego / Maratońska,21.12981,51.39089
+212,Limanowskiego / Maratońska,21.12817,51.38958
+213,1905 Roku / Obrońców,21.13502,51.39020
+214,1905 Roku / Tytoniowa,21.14058,51.39097
+215,1905 Roku / Kościuszki,21.14618,51.39167
+216,Poniatowskiego / Dworzec PKP,21.15293,51.39140
+217,Dworzec PKP,21.15465,51.39148
+219,Limanowskiego / Sucha,21.12500,51.38635
+220,Limanowskiego / Toruńska,21.12043,51.38202
+221,Wierzbicka / Tartaczna,21.13063,51.38478
+222,Wierzbicka / Czarnoleska,21.12707,51.37418
+223,Czarnoleska / Urszuli,21.13253,51.37160
+228,Wiejska / Bukietowa,21.15062,51.37481
+229,Wiejska / Południowa,21.14912,51.37868
+231,Młodzianowska / Gazowa,21.14839,51.38326
+233,Grzecznarowskiego / Osiedlowa,21.16665,51.38146
+234,Grzecznarowskiego / Świerkowa,21.17127,51.37991
+235,Grzecznarowskiego / Śląska,21.15905,51.38590
+236,Słowackiego / Średnia,21.16863,51.39238
+237,Słowackiego / Kalińska,21.17218,51.38954
+238,Cymerysa-Kwiatkowskiego / Błotnia,21.16530,51.38832
+239,Słowackiego / Kwiatowa,21.17538,51.38648
+240,Długojowska / Odrodzenia,21.18101,51.39000
+242,Słowackiego / Gromadzka,21.17840,51.38363
+243,Grzecznarowskiego / Galeria Feniks,21.17820,51.38165
+244,Słowackiego / Grzecznarowskiego (NŻ),21.18081,51.38125
+245,Wojska Polskiego / Słowackiego,21.18168,51.38249
+246,Wojska Polskiego / Ogrodnicza (NŻ),21.18674,51.38486
+247,Wojska Polskiego / Odrodzenia (NŻ),21.19304,51.38919
+248,Słowackiego / Idalińska,21.18273,51.37950
+249,Przejazd / Idalińska,21.18145,51.37476
+250,Mazowiecka / Laskowa,21.18363,51.37276
+252,Słowackiego / Makuszyńskiego,21.18772,51.37478
+253,Słowackiego / Ludowa,21.19079,51.37188
+254,Słowackiego / Paciaka,21.19462,51.36825
+255,Janiszpol,21.20024,51.36349
+256,Janiszpol,21.19950,51.36447
+257,Janiszpol,21.19874,51.36493
+258,Słowackiego / Paciaka,21.19385,51.36916
+259,Słowackiego / Ludowa,21.19028,51.37253
+260,Przejazd / Idalińska,21.18144,51.37485
+261,Słowackiego / Makuszyńskiego,21.18667,51.37593
+262,Słowackiego / Idalińska,21.18292,51.37953
+263,Wojska Polskiego / Ogrodnicza (NŻ),21.18659,51.38493
+264,Wojska Polskiego / Odrodzenia (NŻ),21.19103,51.38762
+265,Słowackiego / Gromadzka,21.17931,51.38297
+266,Słowackiego / Kwiatowa,21.17530,51.38675
+268,Kaptur,21.13835,51.41742
+272,Wojska Polskiego / Lubelska,21.19633,51.39605
+273,Kielecka / Kierzkowska,21.10093,51.39180
+274,Kielecka / Marglowa,21.09722,51.38918
+275,Kielecka / Skrajna (NŻ),21.09157,51.38515
+277,Pruszaków,21.07037,51.36936
+278,Pruszaków,21.07109,51.37061
+279,Starokrakowska / Młyńska,21.11550,51.37797
+280,Starokrakowska / Młyńska,21.11509,51.37755
+281,Starokrakowska / Nadrzeczna (NŻ),21.10892,51.37322
+282,Starokrakowska / Nasypowa (NŻ),21.10439,51.37002
+283,Starokrakowska / Potkanowska,21.09995,51.36685
+284,Starokrakowska / Szydłowiecka,21.09237,51.36429
+285,Stalowa / Starokrakowska,21.08586,51.35993
+286,Potkanów / Stalowa,21.08957,51.35550
+289,Stalowa / Starokrakowska,21.08590,51.36002
+290,Starokrakowska / Szydłowiecka,21.09135,51.36360
+291,Starokrakowska / Potkanowska,21.10072,51.36731
+292,Starokrakowska / Nasypowa (NŻ),21.10590,51.37083
+293,Starokrakowska / Nadrzeczna (NŻ),21.10826,51.37264
+294,Kielecka / Kierzkowska,21.10132,51.39190
+295,Kielecka / Marglowa,21.09795,51.38950
+296,Kielecka / Skrajna (NŻ),21.09281,51.38585
+297,Kielecka / Wośnicka,21.08554,51.38067
+300,Kozienicka / Hermanowicz,21.25334,51.43169
+301,Kozienicka / Pacyńska,21.23981,51.43083
+302,Kozienicka / Bakalarza,21.23330,51.42856
+303,Kozienicka / Bakalarza,21.23061,51.42776
+304,Kozienicka / Pacyńska,21.24320,51.43210
+305,Kozienicka / Hermanowicz,21.25128,51.43189
+306,Kozienicka / Potkańskiego,21.22725,51.42645
+307,Kozienicka / Północna,21.21779,51.42322
+311,Kozienicka / Żółkiewskiego,21.20014,51.41396
+312,Kozienicka / Gryczana (NŻ),21.19368,51.41267
+313,Os. Gołębiów I,21.18437,51.41115
+314,Struga / Szklana,21.17950,51.40981
+317,Zbrowskiego / Zientarskiego,21.17558,51.41232
+318,Zbrowskiego / Orląt Lwowskich,21.17682,51.41489
+319,Zbrowskiego / Gołębiowska (NŻ),21.17861,51.41857
+320,Energetyków / Żółkiewskiego (NŻ),21.18044,51.42235
+321,Energetyków / Brzustowska (NŻ),21.18251,51.42665
+323,Kaszubska / Puławska,21.17583,51.39494
+324,Lubelska / Kaszubska,21.17975,51.39847
+325,Lubelska / Szczecińska,21.18782,51.39767
+326,Lubelska / Chorzowska,21.19277,51.39720
+327,Wojska Polskiego / Poranna (NŻ),21.20040,51.40271
+328,Lubelska / Kaszubska,21.17858,51.39867
+329,Lubelska / Szczecińska,21.18697,51.39785
+330,Lubelska / Chorzowska,21.19322,51.39724
+331,Wojska Polskiego / Lubelska,21.19715,51.39596
+332,Sadków / Lotnisko,21.19986,51.39662
+334,Wojska Polskiego / Poranna (NŻ),21.20041,51.40301
+335,Struga / Szklana,21.17699,51.40946
+337,Kozienicka / Gryczana (NŻ),21.19291,51.41262
+338,Kozienicka / Żółkiewskiego,21.19928,51.41387
+342,Zbrowskiego / Zientarskiego,21.17582,51.41309
+343,Zbrowskiego / Gołębiowska (NŻ),21.17806,51.41767
+344,Kozienicka / Północna,21.21781,51.42341
+345,Kozienicka / Potkańskiego,21.22528,51.42590
+346,Energetyków / Brzustowska (NŻ),21.18167,51.42518
+347,Energetyków / Stara Wola Gołębiowska,21.18750,51.43722
+348,Szarych Szeregów / Wernera,21.14378,51.41064
+349,Bulwarowa / Długa,21.11121,51.39170
+350,Bielicha I,21.09763,51.41134
+351,Bielicha I,21.09617,51.41200
+352,Bielicha II,21.09054,51.41409
+353,Bielicha II,21.08948,51.41465
+354,Bielicha III,21.08519,51.41632
+355,Bielicha III,21.08585,51.41598
+356,Milejowice / Kasztanowa,21.07737,51.41940
+357,Milejowice / Kasztanowa,21.07824,51.41894
+358,Milejowice / Kasztanowa,21.07671,51.41972
+390,Zielona / Janiszew,21.12265,51.42082
+409,Kosów,21.05028,51.35567
+410,Kosów,21.05063,51.35605
+411,Młodocin Mniejszy I,21.03454,51.34472
+412,Młodocin Mniejszy I,21.03404,51.34426
+473,Sołtyków / Główna,21.16779,51.34875
+474,Makowiec / Armii Krajowej,21.20788,51.35755
+475,Makowiec / Armii Krajowej,21.20972,51.35590
+491,Małęczyn Nowy I (NŻ),21.25354,51.39130
+492,Małęczyn Nowy I (NŻ),21.25258,51.39143
+493,Małęczyn Nowy / Cmentarz,21.26156,51.39021
+494,Małęczyn Nowy / Cmentarz,21.26142,51.39059
+495,Małęczyn Nowy / Kościelna,21.25755,51.38640
+496,Małęczyn Nowy / Kościelna,21.25706,51.38610
+497,Małęczyn Stary / Ziembickiego,21.25436,51.38243
+498,Małęczyn Stary / Ziembickiego,21.25410,51.38213
+499,Małęczyn Stary / Makowska,21.25178,51.37810
+501,Grzmucin,21.29020,51.36360
+540,Antoniówka,21.27890,51.42996
+541,Antoniówka,21.27769,51.43059
+542,Antoniówka / stacja PKP,21.27984,51.42633
+543,Antoniówka / stacja PKP,21.28005,51.42603
+544,Groszowice,21.28280,51.41799
+545,Groszowice,21.28305,51.41697
+546,Myśliszewice,21.28469,51.41291
+547,Rajec / Szkoła,21.26781,51.43099
+548,Rajec / Szkoła,21.26485,51.43123
+574,Sucha / Wośnicka (NŻ),21.11140,51.38535
+575,Sucha / Wośnicka (NŻ),21.11195,51.38545
+587,Mieszka I / Perzanowskiej (NŻ),21.16598,51.43638
+588,Mieszka I / Perzanowskiej (NŻ),21.16572,51.43518
+589,Aleksandrowicza / Józefowska (NŻ),21.16282,51.43975
+590,Józefów / Szpital,21.15781,51.43939
+591,Górna / Słowackiego (NŻ),21.17124,51.39177
+592,Skaryszewska / Słowackiego,21.18416,51.37939
+593,Skaryszewska / Inspektowa (NŻ),21.18989,51.37998
+594,Skaryszewska / Inspektowa (NŻ),21.18896,51.38028
+595,Skaryszewska / Kmicica (NŻ),21.19643,51.38190
+596,Skaryszewska / Kmicica (NŻ),21.19699,51.38202
+597,Długojów Górny,21.20606,51.38329
+598,Janów III,21.23596,51.37941
+599,Janów I,21.22309,51.38138
+600,Janów III,21.23526,51.37958
+601,Janów I,21.22179,51.38168
+603,Ofiar Firleja / Warszawska,21.14656,51.44290
+604,Janów II,21.22822,51.38021
+605,Janów II,21.22677,51.38049
+606,Długojowska / Miedziana (NŻ),21.17990,51.38693
+607,Długojowska / Odrodzenia,21.18051,51.38918
+608,Miedziana / Długojowska (NŻ),21.17889,51.38602
+609,Os. Gołębiów I,21.18460,51.41100
+610,Os. Gołębiów I,21.18488,51.41093
+616,Kaszubska / Lubelska (NŻ),21.17724,51.39798
+619,Kielecka / Mostowa (NŻ),21.07902,51.37610
+624,Os. Południe,21.12974,51.36286
+625,Beliny-Prażmowskiego / Dw. PKS,21.15833,51.39326
+626,Dworzec PKP,21.15557,51.39195
+627,Limanowskiego / MOPS,21.12242,51.38398
+634,Gajl / Elektrociepłownia,21.19997,51.44586
+642,Warsztatowa / Potokowa (NŻ),21.12123,51.36411
+643,Warsztatowa / Potokowa (NŻ),21.12088,51.36364
+644,Kierzków,21.06659,51.39687
+645,Wolanowska / Milejowicka,21.09425,51.40240
+646,Halinów,21.11032,51.39003
+647,Bulwarowa / Długa,21.11187,51.39253
+665,Wolanowska / Areszt (NŻ),21.08960,51.40159
+666,Kielecka / Wolanowska,21.11551,51.40197
+673,Grzecznarowskiego / Osiedlowa,21.16769,51.38054
+677,Południowa / Wiejska,21.15039,51.37868
+678,Wiejska / Południowa,21.14931,51.37770
+679,Potkanowska / Żelazna (NŻ),21.11334,51.35977
+680,Potkanowska / Żelazna (NŻ),21.11402,51.35954
+681,Potkanowska / Starokrakowska (NŻ),21.09982,51.36617
+682,Potkanowska / Starokrakowska (NŻ),21.10080,51.36579
+683,Potkanowska / Kłosowa (NŻ),21.10513,51.36375
+684,Potkanowska / Kłosowa (NŻ),21.10680,51.36288
+686,Wapienna / Wolanowska,21.08523,51.40107
+697,Os. Gołębiów II / Paderewskiego,21.17528,51.41590
+698,Klwatecka / Warszawska,21.14342,51.44198
+699,Os. Gołębiów II / Sempołowskiej,21.16958,51.41898
+700,Rapackiego / Chrobrego,21.16457,51.42191
+701,Os. Gołębiów II / Sempołowskiej,21.17012,51.42042
+702,Rapackiego / Sempołowskiej,21.16999,51.42156
+705,Wiejska / Rolnicza,21.14821,51.36569
+706,Nowa Wola Gołębiowska / Potkańskiego,21.22547,51.44447
+708,"Stara Wola Gołębiowska / Energetyków",21.18860,51.43759
+709,Potkańskiego / Podleśna,21.22136,51.43309
+711,Nowa Wola Gołębiowska II,21.20362,51.44790
+712,Nowa Wola Gołębiowska I,21.21428,51.44625
+725,Szarych Szeregów / Warszawska (NŻ),21.14988,51.41385
+726,Zenonów,21.17236,51.33763
+727,Sołtyków / Główna,21.16787,51.34792
+728,Halinów,21.10917,51.38925
+729,Szklana / Struga,21.17816,51.40875
+730,Szklana / Olsztyńska,21.17652,51.40529
+731,Szklana / Olsztyńska,21.17642,51.40482
+732,Szklana / Kolberga (NŻ),21.17462,51.40130
+733,Szklana / Kolberga (NŻ),21.17488,51.40164
+743,Grzmucin I (NŻ),21.28100,51.36603
+744,Grzmucin I (NŻ),21.28067,51.36602
+745,Małęczyn Stary / Makowska,21.25250,51.37817
+748,Malczewskiej / Langiewicza,21.12153,51.40779
+749,Malczewskiej / Langiewicza,21.12132,51.40773
+750,Przytycka / Malczewskiej (NŻ),21.11469,51.40751
+751,Przytycka / Malczewskiej (NŻ),21.11529,51.40727
+755,Wyścigowa / Jana Pawła II,21.15856,51.37864
+756,Wyścigowa / Jana Pawła II,21.15903,51.37769
+757,Wyścigowa / Czackiego,21.16384,51.37666
+758,Wyścigowa / Czackiego,21.16143,51.37686
+759,Wólka Klwatecka,21.12063,51.44198
+760,Klwatecka / Sznajdra (NŻ),21.12857,51.44252
+761,Klwatecka / Sznajdra (NŻ),21.12779,51.44239
+762,Klwatecka / Błędowska,21.13595,51.44257
+763,Klwatecka / Błędowska,21.13542,51.44250
+768,Folwarczna / Mokra (NŻ),21.13764,51.41203
+771,Os. Wośniki,21.10758,51.38253
+772,Wośniki / Szkoła,21.09033,51.37892
+773,Bulwarowa / Pośrednia (NŻ),21.10865,51.38604
+774,Bulwarowa / Pośrednia (NŻ),21.10862,51.38495
+775,Listopadowa / al. Róż (NŻ),21.12092,51.40978
+776,Ofiar Firleja / Barlickiego (NŻ),21.15439,51.44838
+777,Ofiar Firleja / Barlickiego (NŻ),21.15347,51.44770
+778,Wernera / Zielona,21.12745,51.41393
+779,Wernera / Zielona,21.12676,51.41441
+788,Główna / Klonowica (NŻ),21.12968,51.40513
+789,Wośnicka / Londyńska (NŻ),21.09943,51.37924
+790,Wośnicka / Londyńska (NŻ),21.09915,51.37903
+793,Wojska Polskiego / Kozienicka (NŻ),21.20326,51.41330
+794,Wojska Polskiego / Kozienicka (NŻ),21.20345,51.41311
+795,Os. Wośniki,21.10649,51.38224
+796,Długojów Górny,21.20686,51.38352
+799,Godowska / Godna (NŻ),21.15849,51.36851
+800,Godowska / Godna (NŻ),21.15878,51.36845
+801,Godowska I (NŻ),21.15354,51.36814
+802,Godowska I (NŻ),21.15331,51.36823
+803,Cymerysa-Kwiatkowskiego / Placowa,21.16321,51.38536
+804,Cymerysa-Kwiatkowskiego / Placowa,21.16334,51.38570
+805,Kielecka / Mostowa (NŻ),21.08062,51.37733
+806,Struga / Niedziałkowskiego,21.16034,51.40616
+807,Łukasika / Kijewskiej,21.13064,51.38776
+808,Łukasika / Kijewskiej,21.13036,51.38820
+809,Małęczyn Nowy,21.24684,51.39185
+810,Małęczyn Stary / Szkolna,21.24707,51.37904
+811,Małęczyn Stary / Szkolna,21.24695,51.37900
+818,Witosa / Rataja (NŻ),21.16256,51.46605
+820,Janiszew I (NŻ),21.11966,51.42657
+821,Janiszew I (NŻ),21.11975,51.42689
+822,25 Czerwca / Wysoka,21.16423,51.40331
+823,Żwirki i Wigury / Struga,21.16608,51.40793
+824,Limanowskiego / MOPS,21.12225,51.38369
+825,Beliny-Prażmowskiego / Dw. PKS,21.15870,51.39309
+826,Os. Gołębiów II / Paderewskiego,21.17548,51.41615
+829,Chorzowska / Wrocławska (NŻ),21.19529,51.39980
+830,Chorzowska / Wrocławska (NŻ),21.19575,51.40049
+832,Pomorska / Szczecińska (NŻ),21.18164,51.39274
+833,Pomorska / Szczecińska (NŻ),21.18030,51.39306
+835,Kochanowskiego / Lubelska (NŻ),21.18136,51.39723
+843,Chorzowska I (NŻ),21.19672,51.40274
+844,Chorzowska I (NŻ),21.19671,51.40243
+845,Natolin I (NŻ),21.20805,51.40537
+846,Natolin I (NŻ),21.20745,51.40548
+847,Natolin / Szkoła (NŻ),21.21634,51.40476
+848,Natolin / Szkoła (NŻ),21.21691,51.40429
+849,Makowiec,21.21533,51.35017
+850,Józefów / Szpital,21.15658,51.43949
+851,Milejowice / Cerekiewska,21.06043,51.42478
+852,Aleksandrowicza / Warszawska (NŻ),21.14784,51.43922
+853,Aleksandrowicza / Warszawska (NŻ),21.14823,51.43912
+854,Józefów / Szpital,21.15615,51.43957
+862,Witosa / Rataja (NŻ),21.16267,51.46631
+864,Witosa / Sita,21.15967,51.46159
+865,Mireckiego / Reja,21.14110,51.40576
+866,Witosa / Sita,21.15996,51.46181
+867,Kielecka / Wośnicka,21.08396,51.37974
+869,Struga / Niedziałkowskiego,21.15985,51.40593
+870,Limanowskiego / Wałowa,21.13982,51.40286
+874,Wincentów,21.16663,51.46800
+875,Witosa / Silikaty,21.15808,51.45933
+876,Witosa / Silikaty,21.15799,51.45936
+879,Stańczyka / Malczewskiego (NŻ),21.14978,51.40326
+880,Kilińskiego / Focha,21.15376,51.40229
+881,Kilińskiego / Urząd Miejski,21.15623,51.40184
+884,25 Czerwca / Waryńskiego,21.16047,51.39585
+885,25 Czerwca / Waryńskiego,21.16039,51.39554
+888,Kozienicka / Lesiowska (NŻ),21.20859,51.41967
+889,Kozienicka / Lesiowska (NŻ),21.21190,51.42103
+897,Kościuszki / Planty,21.15007,51.39436
+898,Żeromskiego / Słowackiego,21.15969,51.40039
+900,Sienkiewicza / Moniuszki,21.15354,51.39828
+901,Sienkiewicza / Moniuszki,21.15466,51.39814
+902,Kozłów I (NŻ),21.23204,51.45211
+903,Kozłów I (NŻ),21.23187,51.45202
+904,Kozłów,21.23293,51.46114
+905,Potkańskiego / Nowa Wola Gołębiowska,21.22707,51.44488
+906,Chrobrego / Czysta,21.15670,51.40650
+907,Chrobrego / Czysta,21.15698,51.40662
+908,Sołtyków / Skaryszewska,21.17106,51.34088
+909,Sołtyków / Skaryszewska,21.17115,51.34129
+910,Golędzin,20.97267,51.42016
+911,Kilińskiego / Focha,21.15247,51.40257
+929,Warszawska / Kusocińskiego,21.15430,51.41203
+930,Warszawska / 11 Listopada,21.15365,51.41518
+931,Witkacego / Sołtykowska (NŻ),21.16689,51.36317
+932,Witkacego / Sołtykowska (NŻ),21.16679,51.36196
+938,Stara Wola Gołębiowska II,21.21139,51.43404
+940,Stara Wola Gołębiowska I,21.19962,51.43587
+942,Idalińska / Wiertnicza,21.17818,51.37300
+943,Idalińska / Wiertnicza,21.17863,51.37354
+948,Mazowiecka / Laskowa,21.18449,51.37238
+950,Sadków / Kościół (NŻ),21.21524,51.39923
+951,Sadków / Kościół (NŻ),21.21531,51.39907
+954,Maratońska / Dębowa,21.12332,51.39380
+963,Limanowskiego / Maratońska,21.12846,51.38954
+965,Szarych Szeregów / Warszawska (NŻ),21.15205,51.41397
+967,Chrobrego / Kusocińskiego,21.15854,51.40974
+968,Chrobrego / Kusocińskiego,21.15849,51.40945
+971,Makowiec / Kościelna,21.21461,51.35212
+974,Pileckiego / Kelles-Krauza,21.15712,51.40444
+975,Pileckiego / Kelles-Krauza,21.15685,51.40462
+976,Milejowice / Jaworowa,21.06541,51.42299
+977,Milejowice / Jaworowa,21.06434,51.42347
+978,Szarych Szeregów / Wernera,21.14303,51.41009
+980,Mariacka / Sedlaka,21.14072,51.39723
+981,Mariacka / Sedlaka,21.14104,51.39694
+984,Kościuszki / Planty,21.15032,51.39487
+985,Wernera / Malczewskiego,21.15050,51.40602
+990,Słowackiego / Żeromskiego,21.15922,51.39989
+993,Dworzec PKP,21.15455,51.39144
+994,Mieszka I / Żółkiewskiego,21.16323,51.42565
+995,Mieszka I / Królowej Jadwigi,21.16465,51.42903
+1002,Mieszka I / Aleksandrowicza (NŻ),21.16541,51.43880
+1003,Wyścigowa / Radomskiego,21.17024,51.37552
+1004,Wyścigowa / Radomskiego,21.17087,51.37553
+1007,Grzecznarowskiego / Świerkowa,21.17225,51.37971
+1032,Sadków,21.23466,51.39746
+1033,Sadków I (NŻ),21.22630,51.39656
+1034,Sadków I (NŻ),21.22555,51.39666
+1039,Średnia / Słowackiego,21.17045,51.39228
+1040,Słowackiego / Średnia,21.16820,51.39248
+1047,Mieszka I / Aleksandrowicza (NŻ),21.16581,51.43887
+1048,Sadków II (NŻ),21.21865,51.39656
+1049,Sadków II (NŻ),21.21780,51.39665
+1051,Zwoleńska / Kochanowskiego (NŻ),21.17983,51.39651
+1056,Kielecka / Arbiter (NŻ),21.07499,51.37334
+1057,Kielecka / Arbiter (NŻ),21.07541,51.37350
+1058,Rzeszowska / Idalińska,21.18005,51.37667
+1059,Rzeszowska / Idalińska,21.18063,51.37683
+1060,Janiszew,21.11631,51.43025
+1061,Małęczyn Stary / Makowska,21.25325,51.37775
+1065,Os. Prędocinek,21.16302,51.37287
+1066,Os. Prędocinek,21.16312,51.37277
+1070,Witkacego / Godowska,21.16537,51.36862
+1071,Witkacego / Godowska,21.16508,51.36889
+1072,Wiejska / Łanowa,21.15002,51.37068
+1073,Wiejska / Łanowa,21.14993,51.37092
+1077,Kończyce-Kolonia,21.06224,51.36426
+1078,Kończyce-Kolonia,21.06417,51.36550
+1081,Wólka Klwatecka / Mroza,21.13422,51.45095
+1082,Starokrakowska / Kościół (NŻ),21.08909,51.36238
+1083,Kilińskiego / Urząd Miejski,21.15598,51.40203
+1092,Kasztelańska / Jagienki,21.13915,51.44851
+1093,Kasztelańska / Jagienki,21.13861,51.44864
+1094,Kasztelańska / Warszawska,21.14238,51.44739
+1099,Godów,21.14772,51.36066
+1100,Witkacego / Studzienna (NŻ),21.16630,51.36556
+1101,Witkacego / Studzienna (NŻ),21.16641,51.36610
+1102,Malczew,21.16459,51.35642
+1108,Malenicka / Szkoła,21.19105,51.37664
+1109,Malenicka / Szkoła,21.19025,51.37671
+1116,Malenicka / Poziomkowa (NŻ),21.19794,51.37536
+1117,Malenicka / Poziomkowa (NŻ),21.19763,51.37529
+1118,Malenicka / Rzeckiego (NŻ),21.20240,51.37447
+1119,Malenicka / Rzeckiego (NŻ),21.20380,51.37431
+1122,Malenice,21.21403,51.37112
+1123,Malenicka I,21.20740,51.37287
+1124,Malenicka I,21.20715,51.37314
+1129,Żelazna / RADPEC,21.10846,51.35747
+1130,Warsztatowa / Rondo (NŻ),21.11838,51.35928
+1132,Żelazna / RADPEC,21.10784,51.35751
+1133,Warsztatowa / Rondo (NŻ),21.11984,51.36128
+1134,Żelazna / Działki (NŻ),21.10368,51.35571
+1135,Żelazna / Działki (NŻ),21.10304,51.35579
+1141,Cerekiew / Cmentarz,21.06728,51.40541
+1142,Cerekiew / Cmentarz,21.06894,51.40511
+1143,Cerekiew / Kościół,21.05523,51.40660
+1144,Cerekiew / Kościół,21.05535,51.40669
+1147,Cerekiew I (NŻ),21.03788,51.40793
+1148,Cerekiew I (NŻ),21.03743,51.40809
+1151,Zatopolice II,21.01784,51.41144
+1152,Zatopolice II,21.01909,51.41099
+1153,Golędzin II,20.99137,51.41672
+1154,Golędzin II,20.99097,51.41695
+1155,Golędzin I,20.97871,51.41910
+1156,Golędzin I,20.97869,51.41918
+1158,Zatopolice III,21.02435,51.41040
+1159,Zatopolice III,21.02358,51.41060
+1160,Zatopolice I (NŻ),21.01081,51.41304
+1161,Zatopolice I (NŻ),21.01079,51.41314
+1168,Wierzbicka / Warsztatowa,21.12485,51.36603
+1172,Wierzbicka / Gospodarcza (NŻ),21.12451,51.37022
+1175,Limanowskiego / Cmentarz,21.13278,51.39401
+1176,Limanowskiego / Chopina,21.13047,51.39181
+1177,Idalin,21.18318,51.37053
+1181,Dębowa / Maratońska,21.12291,51.39300
+1182,Kosowska / Sucha,21.12078,51.38629
+1183,Kosowska / Sucha,21.12068,51.38675
+1185,Wiertnicza / Idalińska,21.17820,51.37239
+1189,Traugutta / Moniuszki,21.15361,51.39606
+1190,Traugutta / Moniuszki,21.15379,51.39607
+1191,11 Listopada / Zbrowskiego (NŻ),21.17642,51.41114
+1193,11 Listopada / Sportowa,21.17146,51.41197
+1195,Główna / Krucza,21.12121,51.40327
+1196,Sycyńska / Helleńska,21.13374,51.36504
+1197,Os. Południe,21.12972,51.36275
+1198,Główna / Klonowica (NŻ),21.12779,51.40472
+1199,Żeromskiego / Sienna (NŻ),21.17090,51.39917
+1200,Sycyńska / Urszuli (NŻ),21.13493,51.36964
+1201,Sycyńska / Urszuli (NŻ),21.13471,51.36982
+1202,Sycyńska / Helleńska,21.13400,51.36572
+1203,Wośniki / Samorządowa,21.08284,51.38279
+1204,Os. Wośniki,21.10755,51.38244
+1206,Samorządowa / Kielecka (NŻ),21.08661,51.38367
+1207,Wośniki / Szkoła (NŻ),21.09096,51.37849
+1208,Wośniki / Szkoła (NŻ),21.09046,51.37874
+1209,Młodzianowska / Jana Pawła II,21.15404,51.37882
+1216,Jana Pawła II / Młodzianowska,21.15491,51.37928
+1223,Zajezdnia Żakowice,21.13190,51.37742
+1224,Zajezdnia Borki,21.13312,51.38621
+1225,Zajezdnia Ślepowron,21.05820,51.39591
+1226,Zajezdnia Wincentów,21.15753,51.45839
+1232,Rożki,21.04696,51.33168
+1233,Rożki I,21.03854,51.33605
+1234,Rożki I,21.03904,51.33571
+1236,Godowska / Wiejska (NŻ),21.15058,51.36853
+1237,Wacyn / Osiowa,21.11438,51.41492
+1242,Wacyn / Uniwersytecka,21.11336,51.41290
+1243,Uniwersytecka / Przytycka,21.10845,51.40914
+1244,Uniwersytecka / Szpital,21.11130,51.41227
+1245,Uniwersytecka / Szpital,21.11188,51.41220
+1337,Małęczyn Stary / Pogodna (NŻ),21.26183,51.37613
+1338,Małęczyn Stary / Pogodna (NŻ),21.26173,51.37598
+1339,Małęczyn Stary / Leśna (NŻ),21.26980,51.37120
+1340,Małęczyn Stary / Leśna (NŻ),21.26997,51.37135
+1347,Brata Alberta / Ostrowiecka,21.15838,51.37399
+1348,Brata Alberta / Ostrowiecka,21.15892,51.37366
+1349,Kozienicka / Fołtyn,21.20710,51.41819
+1350,Gołębiów / Fołtyn,21.20426,51.41884
+1351,Gołębiów / Holszańskiej,21.18995,51.42281
+1352,Kozienicka / Fołtyn,21.20561,51.41750
+1353,Gołębiów / Fołtyn,21.20555,51.41829
+1354,Fołtyn I (NŻ),21.19861,51.42093
+1355,Fołtyn I (NŻ),21.20068,51.42009
+1358,Kosowska / Stasieckiego,21.12009,51.39078
+1359,Kosowska / Stasieckiego,21.12016,51.39116
+1361,Młodzianowska / Brata Alberta,21.15584,51.37548
+1362,Brata Alberta / Młodzianowska,21.15653,51.37481
+1363,Młodzianowska / Brata Alberta,21.15587,51.37438

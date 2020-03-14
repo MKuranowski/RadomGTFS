@@ -1,0 +1,7 @@
+__pycache__/
+db/
+gtfs/
+*.sh
+*.zip
+*.html
+missing_stops.csv
