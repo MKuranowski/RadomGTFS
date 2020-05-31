@@ -391,6 +391,13 @@ class RadomGtfs:
                                 "feed_lang", "feed_version"])
                 writer.writerow([fp_name, fp_url, "pl", feed_version])
 
+        # fare_attributes.txt
+        with open("gtfs/fare_attributes.txt", "w", encoding="utf-8", newline="\r\n") as f:
+            f.write("fare_id,price,currency_type,payment_method,transfers,transfer_duration\n")
+            f.write('jednogodzinny,3.00,PLN,0,,3600\n')
+            f.write('dobowy,10.00,PLN,0,,86400\n')
+            f.write('jednorazowy_u_kierowcy,4.00,PLN,0,0,\n')
+
     def routes(self):
         with open("gtfs/routes.txt", mode="w", encoding="utf-8", newline="") as f:
             wrtr = csv.writer(f)
