@@ -334,7 +334,7 @@ class RadomGtfs:
         self.trips = {}
 
         # files that are written to multiple times
-        self.trips_head = ["route_id", "service_id", "trip_id", "trip_headsign"]
+        self.trips_head = ["route_id", "service_id", "trip_id", "trip_headsign", "team_id"]
         self.times_head = ["trip_id", "arrival_time", "departure_time", "stop_id", "stop_sequence"]
         self.dates_head = ["service_id", "date", "exception_type"]
 
@@ -515,6 +515,7 @@ class RadomGtfs:
                 "service_id": service_id,
                 "trip_id": trip_id,
                 "trip_headsign": "",
+                "team_id": db_trip["nTeam"],
             }
 
         buff.close()
@@ -585,13 +586,13 @@ class RadomGtfs:
             date_str = current_day.strftime("%Y%m%d")
 
             # Holidays & Sundays
-            if current_day.weekday == 6 or self.cal_exceptions.get(current_day) == "holiday":
+            if current_day.weekday() == 6 or self.cal_exceptions.get(current_day) == "holiday":
 
                 if "NIEDZIELA" in self.services_used:
                     self.dates_wrtr.writerow([self.id_prefix + "NIEDZIELA", date_str, 1])
 
             # Saturdays
-            elif current_day.weekday == 5:
+            elif current_day.weekday() == 5:
 
                 if "SOBOTA" in self.services_used:
                     self.dates_wrtr.writerow([self.id_prefix + "SOBOTA", date_str, 1])
