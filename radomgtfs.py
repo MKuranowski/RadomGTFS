@@ -374,15 +374,6 @@ class RadomGtfs:
             f.write("agency_id,agency_name,agency_url,agency_timezone,agency_lang\n")
             f.write('0,MZDiK Radom,"http://www.mzdik.radom.pl/",Europe/Warsaw,pl\n')
 
-        # attribution.txt
-        with open("gtfs/attributions.txt", "w", encoding="utf-8", newline="\r\n") as f:
-            f.write("attribution_id,organization_name,is_producer,is_operator,"
-                    "is_authority,is_data_source,attribution_url\n")
-            f.write('0,"RadomGTFS (provided by Mikołaj Kuranowski)",1,0,0,0,'
-                    '"https://github.com/MKuranowski/RadomGTFS"\n')
-            f.write(f'1,"MZDiK Radom (data retrieved {data_update})",0,0,1,1,'
-                    '"http://www.mzdik.radom.pl/"\n')
-
         # feed_info.txt, but only if feed_publisher data is provided
         if fp_name and fp_url:
             with open("gtfs/feed_info.txt", "w", encoding="utf-8", newline="") as f:
