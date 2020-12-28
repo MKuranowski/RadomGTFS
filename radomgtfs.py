@@ -10,6 +10,7 @@ import requests
 import argparse
 import zipfile
 import shutil
+import shlex
 import zeep
 import time
 import csv
@@ -25,6 +26,7 @@ __email__ = "".join(chr(i) for i in [109, 105, 107, 111, 108, 97, 106, 64, 109, 
                                      114, 97, 110, 46, 112, 108])
 __license__ = "MIT"
 
+SCHEDULE_LENGTH_DAYS = 365
 KNOWN_SERVICES = {"POWSZEDNI", "SOBOTA", "NIEDZIELA"}
 IGNORE_STOPS = {1220, 1221, 1222, 1223, 1224, 1225, 1226, 1227, 1228, 1229,
                 649, 652, 653, 659, 662}
@@ -34,14 +36,15 @@ IGNORE_STOPS = {1220, 1221, 1222, 1223, 1224, 1225, 1226, 1227, 1228, 1229,
 
 def dump_mdb_table(mdb_file: str, table_name: str) -> Tuple[io.StringIO, csv.DictReader]:
     result = subprocess.run(
-        ["mdb-export", mdb_file, table_name],
+        shlex.join(["mdb-export", mdb_file, table_name]),
         stdout=subprocess.PIPE,
         stderr=subprocess.PIPE,
         env={"MDB_JET3_CHARSET": "CP1250"},
         encoding="utf-8",
-        check=True
+        shell=True
     )
 
+    result.check_returncode()
     buffer = io.StringIO(result.stdout, newline="")
     reader = csv.DictReader(buffer)
     return buffer, reader
@@ -140,7 +143,7 @@ def list_files() -> List[dict]:
             "path": os.path.join("db", version + ".mdb"),
             "version": version,
             "start": start_date,
-            "end": start_date + timedelta(days=180),
+            "end": start_date + timedelta(days=SCHEDULE_LENGTH_DAYS),
         })
 
     # Add proper end dates
@@ -333,7 +336,7 @@ class RadomGtfs:
 
         # attributes changing per input file
         self.start_date = date.today()
-        self.end_date = self.start_date + timedelta(days=180)
+        self.end_date = self.start_date + timedelta(days=SCHEDULE_LENGTH_DAYS)
 
         self.services_used = set()
 
@@ -472,7 +475,7 @@ class RadomGtfs:
             end_date: Optional[date] = None):
 
         self.start_date = start_date or date.today()
-        self.end_date = self.start_date + timedelta(days=180)
+        self.end_date = end_date or self.start_date + timedelta(days=SCHEDULE_LENGTH_DAYS)
 
         self.services_used = set()
 
