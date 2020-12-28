@@ -3,12 +3,11 @@ from email.utils import parsedate_to_datetime
 from datetime import datetime, date, timedelta
 from warnings import warn
 from tzlocal import get_localzone
-from typing import Tuple, List, Mapping, AbstractSet, Optional
+from typing import Tuple, List, Dict, Set, Optional
 from bs4 import BeautifulSoup
 import subprocess
 import requests
 import argparse
-import tempfile
 import zipfile
 import shutil
 import zeep
@@ -22,7 +21,8 @@ import re
 
 __title__ = "RadomGTFS"
 __author__ = "Mikolaj Kuranowski"
-__email__ = "mikolaj@mkuran.pl"
+__email__ = "".join(chr(i) for i in [109, 105, 107, 111, 108, 97, 106, 64, 109, 107, 117,
+                                     114, 97, 110, 46, 112, 108])
 __license__ = "MIT"
 
 KNOWN_SERVICES = {"POWSZEDNI", "SOBOTA", "NIEDZIELA"}
@@ -30,6 +30,7 @@ IGNORE_STOPS = {1220, 1221, 1222, 1223, 1224, 1225, 1226, 1227, 1228, 1229,
                 649, 652, 653, 659, 662}
 
 # HELPER FUNCTIONS #
+
 
 def dump_mdb_table(mdb_file: str, table_name: str) -> Tuple[io.StringIO, csv.DictReader]:
     result = subprocess.run(
@@ -45,6 +46,7 @@ def dump_mdb_table(mdb_file: str, table_name: str) -> Tuple[io.StringIO, csv.Dic
     reader = csv.DictReader(buffer)
     return buffer, reader
 
+
 def clear_directory(directory):
     if os.path.exists(directory) and os.path.isdir(directory):
         for f in os.scandir(directory):
@@ -54,6 +56,7 @@ def clear_directory(directory):
                 os.remove(f.path)
     else:
         os.mkdir(directory)
+
 
 def route_name(short_name: str) -> str:
     short_name = short_name.rjust(4, "0")
@@ -73,10 +76,12 @@ def route_name(short_name: str) -> str:
 
     return " — ".join(dirs)
 
+
 def gtfs_time(minutes_after_midnight: int) -> str:
     return "{:0>2}:{:0>2}:00".format(*divmod(minutes_after_midnight, 60))
 
-def calendar_exceptions() -> Mapping[date, str]:
+
+def calendar_exceptions() -> Dict[date, str]:
     print("\033[1A\033[K" "Downloading calendar exceptions")
 
     req = requests.get("https://docs.google.com/spreadsheets/d/"
@@ -89,7 +94,7 @@ def calendar_exceptions() -> Mapping[date, str]:
     exceptions = {}
 
     for row in reader:
-        row["date"] = datetime.strptime(row["date"], "%Y-%m-%d").date()
+        row["date"] = datetime.strptime(row["date"], "%Y-%m-%d").date()  # type: ignore
 
         if row["regions"] != "" and not ("14" in row["regions"].split(".")):
             continue
@@ -99,11 +104,13 @@ def calendar_exceptions() -> Mapping[date, str]:
     buff.close()
     return exceptions
 
+
 def compress(target):
     with zipfile.ZipFile(target, mode="w", compression=zipfile.ZIP_DEFLATED) as arch:
         for f in os.scandir("gtfs"):
             if f.name.endswith(".txt"):
                 arch.write(f.path, arcname=f.name)
+
 
 # DATA DOWNLOADING #
 
@@ -146,6 +153,7 @@ def list_files() -> List[dict]:
 
     return files
 
+
 def unpack_zip(req, target, version):
     zip_stream = io.BytesIO(req.content)
 
@@ -160,6 +168,7 @@ def unpack_zip(req, target, version):
 
         arch.extract(dbase_name, path="db")
         os.rename(os.path.join("db", dbase_name), target)
+
 
 def get_files(files) -> bool:
     os.makedirs("db", exist_ok=True)
@@ -205,14 +214,15 @@ def get_files(files) -> bool:
 
     return things_changed
 
+
 # DATA PARSING #
 
 class StopHandler:
     def __init__(self):
-        self.used_missing = set()  # type: AbstractSet[int]
-        self.invalid = {}  # type: Mapping[int, str]
-        self.used = set()  # type: AbstractSet[int]
-        self.data = {}     # type: Mapping[int, Mapping[str, str]]
+        self.used_missing: Set[int] = set()
+        self.invalid: Dict[int, Tuple[str, str]] = {}
+        self.used: Set[int] = set()
+        self.data: Dict[int, Dict[str, str]] = {}
 
     def read_data_csv(self):
         """Get stop positions from file stops.csv"""
@@ -222,12 +232,12 @@ class StopHandler:
 
         # Iterate over stops
         for stop in reader:
-            stop_id = int(stop.get("id"))
+            stop_id = int(stop["id"])
 
             if stop_id in IGNORE_STOPS:
                 continue
 
-            self.data[stop_id] = {
+            self.data[stop_id] = {  # type: ignore
                 "stop_id": stop_id,
                 "stop_name": stop.get("nazwa"),
                 "stop_lat": stop.get("szerokosc"),
@@ -253,7 +263,7 @@ class StopHandler:
             if stop_id in IGNORE_STOPS:
                 continue
 
-            self.data[stop_id] = {
+            self.data[stop_id] = {  # type: ignore
                 "stop_id": stop_id,
                 "stop_name": stop.get("n").strip(),
                 "stop_lat": stop.get("y"),
@@ -312,6 +322,7 @@ class StopHandler:
             for used_invalid_stop in self.used_missing:
                 stop_code, stop_name = self.invalid.get(used_invalid_stop, ("", ""))
                 wrtr.writerow([used_invalid_stop, stop_code, stop_name])
+
 
 class RadomGtfs:
     def __init__(self):
@@ -673,6 +684,7 @@ class RadomGtfs:
 
         print("\033[1A\033[K" "Compressing")
         compress(target)
+
 
 if __name__ == "__main__":
     st = time.time()
