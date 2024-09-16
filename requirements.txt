@@ -1,3 +1,4 @@
 requests
 tzlocal
 beautifulsoup4
+zeep
