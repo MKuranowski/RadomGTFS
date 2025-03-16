@@ -1,12 +1,24 @@
 import argparse
+import csv
+import io
 import re
+from collections.abc import Iterable, Iterator
 from typing import cast
+from xml.etree import ElementTree
 
 import requests
-from impuls import App, HTTPResource, PipelineOptions, Task
+from impuls import App, PipelineOptions, Task
 from impuls.model import Date, FareAttribute, FeedInfo
 from impuls.multi_file import IntermediateFeed, IntermediateFeedProvider, MultiFile
-from impuls.tasks import AddEntity, ExecuteSQL, GenerateTripHeadsign, LoadGTFS, SaveGTFS
+from impuls.resource import FETCH_CHUNK_SIZE, HTTPResource, WrappedResource
+from impuls.tasks import (
+    AddEntity,
+    ExecuteSQL,
+    GenerateTripHeadsign,
+    LoadGTFS,
+    ModifyStopsFromCSV,
+    SaveGTFS,
+)
 
 
 class RadomIntermediateFileProvider(IntermediateFeedProvider[HTTPResource]):
@@ -27,6 +39,60 @@ class RadomIntermediateFileProvider(IntermediateFeedProvider[HTTPResource]):
             ]
 
 
+class RadomStopsResource(WrappedResource):
+    def __init__(self) -> None:
+        super().__init__(
+            HTTPResource.post(
+                "http://rkm.mzdik.radom.pl/PublicService.asmx",
+                headers={"Content-Type": "text/xml; charset=utf-8"},
+                data=(  # type: ignore  # https://github.com/MKuranowski/Impuls/issues/23
+                    "<?xml version='1.0' encoding='utf-8'?>"
+                    "<soap:Envelope xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' "
+                    "               xmlns:xsd='http://www.w3.org/2001/XMLSchema' "
+                    "               xmlns:soap='http://schemas.xmlsoap.org/soap/envelope/'>"
+                    "  <soap:Body><GetGoogleStops xmlns='http://PublicService/' /></soap:Body>"
+                    "</soap:Envelope>"
+                ),
+            ),
+        )
+
+    def fetch(self, conditional: bool) -> Iterator[bytes]:
+        xml_content = self._get_xml_content(conditional)
+        root = ElementTree.XML(xml_content)
+        stops = self.extract_stops_from_xml(root)
+        csv_content = self.dump_stops_to_csv(stops)
+        for offset in range(0, len(csv_content), FETCH_CHUNK_SIZE):
+            yield csv_content[offset : offset + FETCH_CHUNK_SIZE]
+
+    def _get_xml_content(self, conditional: bool) -> str:
+        return b"".join(self.r.fetch(conditional)).decode("utf-8-sig")
+
+    def extract_stops_from_xml(self, xml: ElementTree.Element) -> list[tuple[str, ...]]:
+        return [
+            (
+                s.get("id", "").strip(),
+                self.prettify_name(s.get("n", "").strip()),
+                s.get("y", "").strip(),
+                s.get("x", "").strip(),
+            )
+            for s in xml.iterfind(".//S")
+        ]
+
+    @staticmethod
+    def dump_stops_to_csv(stops: Iterable[tuple[str, ...]]) -> bytes:
+        buffer = io.BytesIO()
+        text_buffer = io.TextIOWrapper(buffer, encoding="utf-8", newline="")
+        writer = csv.writer(text_buffer)
+        writer.writerow(("stop_id", "stop_name", "stop_lat", "stop_lon"))
+        writer.writerows(stops)
+        text_buffer.flush()
+        return buffer.getvalue()
+
+    @staticmethod
+    def prettify_name(name: str) -> str:
+        return name.rstrip(" .").replace("  ", " ")
+
+
 class RadomGTFS(App):
     def add_arguments(self, parser: argparse.ArgumentParser) -> None:
         parser.add_argument("-o", "--output", default="radom.zip", help="path to the output GTFS")
@@ -38,6 +104,7 @@ class RadomGTFS(App):
     ) -> MultiFile[HTTPResource]:
         return MultiFile(
             options=options,
+            additional_resources={"stops.csv": RadomStopsResource()},
             intermediate_provider=RadomIntermediateFileProvider(),
             intermediate_pipeline_tasks_factory=lambda feed: cast(
                 list[Task],
@@ -90,7 +157,7 @@ class RadomGTFS(App):
                             "WHERE stop_id IN request_stops"
                         ),
                     ),
-                    # TODO: Fix stop locations
+                    ModifyStopsFromCSV("stops.csv"),
                 ],
             ),
             final_pipeline_tasks_factory=lambda _: cast(
