@@ -79,6 +79,17 @@ class RadomGTFS(App):
                         statement="UPDATE trips SET headsign = ''",
                     ),
                     GenerateTripHeadsign(),
+                    ExecuteSQL(
+                        task_name="MarkRequestStops",
+                        statement=(
+                            "WITH request_stops AS "
+                            "  (SELECT stop_id FROM stops WHERE name LIKE '%(NŻ)') "
+                            "UPDATE stop_times SET "
+                            "  pickup_type = iif(pickup_type = 0, 3, pickup_type), "
+                            "  drop_off_type = iif(drop_off_type = 0, 3, drop_off_type) "
+                            "WHERE stop_id IN request_stops"
+                        ),
+                    ),
                     # TODO: Fix stop locations
                 ],
             ),
