@@ -1,3 +1,6 @@
+# © Copyright 2025 Mikołaj Kuranowski
+# SPDX-License-Identifier: MIT
+
 import argparse
 import csv
 import io
