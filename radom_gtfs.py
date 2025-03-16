@@ -57,8 +57,16 @@ class RadomGTFS(App):
                         feed.version,
                     ),
                 ),
-                # TODO: Prettify routes
-                # TODO: Fix trip headsigns
+                ExecuteSQL(
+                    task_name="FixRouteColor",
+                    statement=(
+                        "UPDATE routes SET "
+                        "color = CASE "
+                        "  WHEN short_name LIKE 'N%' THEN '000000' "
+                        "  ELSE 'E31E24' END, "
+                        "text_color = 'FFFFFF'"
+                    ),
+                ),
                 # TODO: Fix stop locations
             ],
             final_pipeline_tasks_factory=lambda _: [
