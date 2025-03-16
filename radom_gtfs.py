@@ -5,7 +5,7 @@ import requests
 from impuls import App, HTTPResource, PipelineOptions
 from impuls.model import Date, FeedInfo
 from impuls.multi_file import IntermediateFeed, IntermediateFeedProvider, MultiFile
-from impuls.tasks import AddEntity, ExecuteSQL, LoadGTFS
+from impuls.tasks import AddEntity, ExecuteSQL, GenerateTripHeadsign, LoadGTFS
 
 
 class RadomIntermediateFileProvider(IntermediateFeedProvider[HTTPResource]):
@@ -67,6 +67,11 @@ class RadomGTFS(App):
                         "text_color = 'FFFFFF'"
                     ),
                 ),
+                ExecuteSQL(
+                    task_name="DropTripHeadsign",
+                    statement="UPDATE trips SET headsign = ''",
+                ),
+                GenerateTripHeadsign(),
                 # TODO: Fix stop locations
             ],
             final_pipeline_tasks_factory=lambda _: [
