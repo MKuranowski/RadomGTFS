@@ -6,7 +6,7 @@ import requests
 from impuls import App, HTTPResource, PipelineOptions, Task
 from impuls.model import Date, FareAttribute, FeedInfo
 from impuls.multi_file import IntermediateFeed, IntermediateFeedProvider, MultiFile
-from impuls.tasks import AddEntity, ExecuteSQL, GenerateTripHeadsign, LoadGTFS
+from impuls.tasks import AddEntity, ExecuteSQL, GenerateTripHeadsign, LoadGTFS, SaveGTFS
 
 
 class RadomIntermediateFileProvider(IntermediateFeedProvider[HTTPResource]):
@@ -28,6 +28,9 @@ class RadomIntermediateFileProvider(IntermediateFeedProvider[HTTPResource]):
 
 
 class RadomGTFS(App):
+    def add_arguments(self, parser: argparse.ArgumentParser) -> None:
+        parser.add_argument("-o", "--output", default="radom.zip", help="path to the output GTFS")
+
     def prepare(
         self,
         args: argparse.Namespace,
@@ -118,7 +121,68 @@ class RadomGTFS(App):
                             transfer_duration=86400,
                         ),
                     ),
-                    # TODO: SaveGTFS
+                    SaveGTFS(
+                        headers={
+                            "agency.txt": (
+                                "agency_id",
+                                "agency_name",
+                                "agency_url",
+                                "agency_timezone",
+                                "agency_lang",
+                                "agency_fare_url",
+                            ),
+                            "calendar_dates.txt": ("service_id", "date", "exception_type"),
+                            "stops.txt": ("stop_id", "stop_name", "stop_lat", "stop_lon"),
+                            "routes.txt": (
+                                "route_id",
+                                "agency_id",
+                                "route_short_name",
+                                "route_long_name",
+                                "route_type",
+                                "route_color",
+                                "route_text_color",
+                            ),
+                            "trips.txt": (
+                                "trip_id",
+                                "route_id",
+                                "service_id",
+                                "trip_headsign",
+                                "direction_id",
+                                "shape_id",
+                            ),
+                            "stop_times.txt": (
+                                "trip_id",
+                                "stop_sequence",
+                                "stop_id",
+                                "arrival_time",
+                                "departure_time",
+                                "pickup_type",
+                                "drop_off_type",
+                            ),
+                            "shapes.txt": (
+                                "shape_id",
+                                "shape_pt_sequence",
+                                "shape_pt_lat",
+                                "shape_pt_lon",
+                            ),
+                            "fare_attributes.txt": (
+                                "agency_id",
+                                "fare_id",
+                                "price",
+                                "currency_type",
+                                "payment_method",
+                                "transfers",
+                                "transfer_duration",
+                            ),
+                            "feed_info.txt": (
+                                "feed_publisher_name",
+                                "feed_publisher_url",
+                                "feed_lang",
+                                "feed_version",
+                            ),
+                        },
+                        target=args.output,
+                    ),
                 ],
             ),
         )
